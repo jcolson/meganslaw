@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://megan.blackntan.com/xsd/megan.xsd" xmlns="http://megan.blackntan.com/xsd/megan.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="megan">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="baddy" maxOccurs="unbounded" type="ct_Baddy"/>
+      </xs:sequence>
+      <xs:attribute name="lat" use="required" type="xs:decimal"/>
+      <xs:attribute name="long" use="required" type="xs:decimal"/>
+      <xs:attribute name="zip" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ct_Baddy">
+      <xs:sequence>
+        <xs:element name="img" type="ct_Img"/>
+        <xs:element name="name" type="ct_Name"/>
+        <xs:element minOccurs="0" name="whitepages" type="ct_Whitepages"/>
+        <xs:element name="geocode" type="ct_Geocode"/>
+      </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ct_Img">
+      <xs:attribute name="src" use="required" type="xs:anyURI"/>
+  </xs:complexType>
+  <xs:complexType name="ct_Whitepages">
+      <xs:sequence>
+        <xs:element name="name" type="ct_Name"/>
+        <xs:element name="address" type="ct_Address"/>
+      </xs:sequence>
+    </xs:complexType>
+  <xs:complexType name="ct_Address">
+      <xs:attribute name="city" use="required" type="xs:NCName"/>
+      <xs:attribute name="phone" use="required"/>
+      <xs:attribute name="state" use="required" type="xs:NCName"/>
+      <xs:attribute name="street" use="required"/>
+      <xs:attribute name="zip" use="required" type="xs:integer"/>
+    </xs:complexType>
+  <xs:complexType name="ct_Geocode">
+      <xs:attribute name="lat" use="required" type="xs:decimal"/>
+      <xs:attribute name="long" use="required" type="xs:decimal"/>
+    </xs:complexType>
+  <xs:complexType name="ct_Name">
+      <xs:attribute name="first" type="xs:NCName"/>
+      <xs:attribute name="full" use="required"/>
+      <xs:attribute name="last" type="xs:NCName"/>
+    </xs:complexType>
+</xs:schema>

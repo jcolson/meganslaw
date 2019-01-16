@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="66"
+   repos="svn+ssh://ns.karma.net/home/svn/repositories/svn"
+   url="svn+ssh://ns.karma.net/home/svn/repositories/svn/Megan/trunk/web/WEB-INF"
+   last-author="jcolson"
+   committed-date="2006-11-14T21:12:49.547000Z"
+   kind="dir"
+   name=""
+   committed-rev="60"/>
+<entry
+   checksum="7987872fa9f63a725b6c10e75873ef5a"
+   last-author="jcolson"
+   prop-time="2006-11-14T21:12:11.000000Z"
+   text-time="2006-11-02T01:46:10.000000Z"
+   committed-date="2006-11-14T21:12:49.547000Z"
+   name="faces-config.xml"
+   kind="file"
+   committed-rev="60"/>
+<entry
+   checksum="2f1621aeee5a8a2e99b14cfe55d47cce"
+   last-author="jcolson"
+   prop-time="2006-11-14T21:12:11.000000Z"
+   text-time="2006-11-13T17:00:22.000000Z"
+   committed-date="2006-11-14T21:12:49.547000Z"
+   kind="file"
+   name="managed-beans.xml"
+   committed-rev="60"/>
+<entry
+   checksum="67f523ae2b7fea0c9696ec51fd8f4ba6"
+   last-author="jcolson"
+   prop-time="2006-11-14T21:12:11.000000Z"
+   text-time="2006-11-03T19:46:37.000000Z"
+   committed-date="2006-11-14T21:12:49.547000Z"
+   name="navigation.xml"
+   kind="file"
+   committed-rev="60"/>
+<entry
+   checksum="4c70b103f34737fd098d579b9dfe73d0"
+   last-author="jcolson"
+   prop-time="2006-11-14T21:12:11.000000Z"
+   text-time="2006-11-03T19:52:53.000000Z"
+   committed-date="2006-11-14T21:12:49.547000Z"
+   kind="file"
+   name="web.xml"
+   committed-rev="60"/>
+</wc-entries>
